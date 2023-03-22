@@ -1,5 +1,4 @@
 
-
 const category = require("../controller/category.controller.js");
 const router = require("express").Router();
 const verify = require("../controller/verifyTokenapi.controller.js");
@@ -37,6 +36,7 @@ const { upload } = require('../helpers/filehelper');
 
 
 //CREATE
+
 router.post("/", express.static(path.join(__dirname, 'uploads')), upload.array('files'), category.createCategory)
 
 //UPDATE

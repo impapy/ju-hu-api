@@ -2,6 +2,7 @@ const cart = require("../controller/cart.controller.js");
 const verify =require("../controller/verifyTokenapi.controller.js");
 const router = require("express").Router();
 
+///////////////
 
 
 // router.post("/addToCart", verify.verifyToken, cart.addToCart);
