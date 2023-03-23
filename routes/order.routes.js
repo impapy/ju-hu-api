@@ -15,10 +15,10 @@ const order = require("../controller/order.controller.js");
 // router.get("/chart/incomWeekly", verfiy.verifyTokenAndAdmin, order.incomWeekly);
 // router.put("/cancel/:orderId", verfiy.verifyTokenAndAuthorization, order.cancleOrder);
 // router.put("/:orderId", verfiy.verifyTokenAndAdmin, order.deliverOrderByAdmin);
-// router.post("/pagination", verfiy.verifyToken, order.getAllOrderpagination);
+// router.post("/pagination", verfiy.verifyToken, order.getAllOrderpagination   );
 
 
-router.post("/createOrder", order.createOrder);
+router.post("/createOrder", order.createOrder);   
 router.get("/", order.getAllOrder);
 router.get("/details/:id", order.getOrderById);
 router.get("/user/:id", order.orderUserInfo);

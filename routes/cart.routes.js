@@ -3,7 +3,7 @@ const verify =require("../controller/verifyTokenapi.controller.js");
 const router = require("express").Router();
 
 ///////////////
-
+///////////////
 
 // router.post("/addToCart", verify.verifyToken, cart.addToCart);
 // router.get("/", verify.verifyToken, cart.getCartItems);
