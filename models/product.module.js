@@ -6,9 +6,9 @@ const productSchema = new mongoose.Schema(
         name: { type: String, required: true, unique: true },
         arname: { type: String, default: "" },/////
         imagePath: { type: [String], required: true },
-        category: { type: String, required: true },
+        category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
         arcategory: { type: String, default: "" },////
-        subcategory: { type: String},
+        subcategory: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
         arsubcategory: {type: String,default: ""},
         description: { type: String , default: "Order From Jumia express items and get free shipping."},
         ardescription: { type: String,default: "" },//////

@@ -38,11 +38,7 @@ const categorySchema = new  mongoose.Schema({
     arName:{
         type:String,
     },
-    subCategories:[{
-        name:{type:String},
-        arName:{type:String},
-        image:{type:[String]}
-    }],  
+    subCategories:{ type: mongoose.Schema.Types.ObjectId, ref: 'Category' },  
     // arSubCategories:[{
         
     //     image:{type:String}

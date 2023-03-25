@@ -49,6 +49,7 @@ router.delete("/SubCategory/:name",  category.deleteSubCategory);
 
 //GET ALL CATEGORIES
 router.get("/", category.getAllCategory);
+router.get("/supCategory/:categoryId", category.getCategorySupCategory);
 
 //GET CATEGORY BY NAME
 router.get("/speciefic/:categoryName", category.getCategoryByName);
